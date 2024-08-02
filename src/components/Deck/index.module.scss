@@ -1,0 +1,10 @@
+.card {
+  @for $i from 1 through 52 {
+    $x: $i * -1px;
+
+    &:nth-child(#{$i}) {
+      z-index: $i;
+      transform: translateX($x);
+    }
+  }
+}

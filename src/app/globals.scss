@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card-aspect-ratio: 63 / 88;
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-game: 25;
+  --z-modal: 300;
+  --z-footer: 1;
+  --z-hand: 50;
+}
+
+body {
+  color: #000;
+  background: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
